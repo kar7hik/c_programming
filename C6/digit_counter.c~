@@ -1,0 +1,11 @@
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  int digit;
+
+  printf("enter the number: ");
+  
+  return 0;
+}

@@ -1,0 +1,21 @@
+
+// Copyright 2017 Karthik
+
+
+/* header files */
+#include <stdio.h>
+
+/* macros */
+
+
+/* global variables */
+
+
+/* function prototype */
+
+
+/* main function */
+int main(void) {
+  
+  return 0;
+}

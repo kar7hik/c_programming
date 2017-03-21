@@ -1,0 +1,20 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include <ctype.h>
+
+#define MAX_MSG_LENG 50;
+
+int main(void) {
+  char message[MAX_MSG_LENG];
+  int i, n;
+
+  printf("enter the message: ");
+
+  while (getchar(input) != '\n') {
+    message[input] = toupper(message[input])
+  }
+  
+  return 0;
+}

@@ -1,0 +1,19 @@
+// Copyright 2017 karthik
+
+#include <stdio.h>
+int main(void) {
+  int date1, date2, month1, month2, year1, year2;
+
+  printf("enter the first date(mm/dd/yy): ");
+  scanf("%2d/%2d%4d", &date1, &month1, &year1);
+
+  
+  printf("enter the second date(mm/dd/yy): ");
+  scanf("%2d/%2d%4d", &date2, &month2, &year2);
+
+  if (date1 > date2 || month1 > month2) {
+    if (year1 > year2) {
+      printf("year1);
+
+
+}

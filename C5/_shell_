@@ -1,0 +1,51 @@
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ ls
+exercise_1              tax_income.c
+exercise_51.c           tax_income.c~
+exercise_51.c~          time
+number                  #time_format.c#
+#number_digit_count.c#  time_format.c
+number_digit_count.c    time_format.c~
+number_digit_count.c~
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ gcc tax_income.c -o tax
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ ./tax 
+enter the income: 6520
+the tax amount you need to pay is 142.50
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ gcc tax_income.c -o tax
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ ./tax 
+enter the income: 6520
+the tax amount you need to pay is 468.50
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ cd
+karthik@universe:~$ cd Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05/
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ ls
+broker2.c                 project504_wind_force.c
+broker.c                  project505_calc_tax.c
+date.c                    project506_product_code.c
+exer501.c                 project507-1.c
+exer502.c                 project507-2_compare_if.c
+exer503.c                 project507-3_define.c
+exer505.c                 project507_compare.c
+exer506.c                 project508_flight_time. c
+exer509.c                 project509_calender.c
+exer510.c                 project510_grade.c
+exer511.c                 project511_speak_english.c
+project501_count_digit.c  project512.c
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ gcc project505_calc_tax.c -o tax
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ ./tex
+bash: ./tex: No such file or directory
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ ./tex
+bash: ./tex: No such file or directory
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ ./tax
+Enter your income amount: 6520
+Your tax is $206.00karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$   
+karthik@universe:~/Projects/programming/c_programming/book_solution/C-Programming-KNKing-2nd-Part-1-master/Chapter05$ cd
+karthik@universe:~$ cd Projects/programming/c_programming/Chapter05/
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ gcc tax_income.c -o tax
+tax_income.c: In function ‘main’:
+tax_income.c:17:3: error: expected ‘;’ before ‘else’
+   else if (income <= 5250)
+   ^
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ gcc tax_income.c -o tax
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ ./tax 
+enter the income: 6520
+the tax amount you need to pay is 206.00
+karthik@universe:~/Projects/programming/c_programming/Chapter05$ 

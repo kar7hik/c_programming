@@ -1,0 +1,30 @@
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+
+  float denominator, exp = 1.0f, number;
+  int N;
+  int numerator = 1;
+  
+  printf("enter the number: ");
+  scanf("%d", &N);
+  printf("1");
+  
+  for (int i = 1; i <= N; i++) {
+    for (int j = 1, denominator = 1.0f; j <= i; j++) {
+      denominator *= j;
+    }
+    
+    number = 1.0f / denominator;
+    
+    printf(" + 1/%.f", denominator);
+
+    exp += number;
+  }
+  printf("\n\nexp is %.5f\n", exp);
+  
+  return 0;
+}
+

@@ -1,0 +1,11 @@
+// Copyright 2017 karthik
+
+#include <stdio.h>
+int main(void) {
+  int num_shares;
+  float 
+  
+
+  printf("the total value is \n");
+  return 0;
+}

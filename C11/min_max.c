@@ -1,0 +1,44 @@
+
+// Copyright 2017 Karthik
+
+/* header files */
+#include <stdio.h>
+
+/* macros */
+#define N 10
+
+/* function prototype */
+void min_max(int a[], int n, int *max, int *min);
+
+
+int main(void) {
+  int a[N], n, i;
+
+  printf("enter the length of the array: ");
+  scanf("%d", &n);
+
+  printf("enter %d numbers: ", n);
+  for (i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+  }
+
+  int big, small;
+  min_max(a, n, &big, &small);
+
+  printf("min: %d and max: %d\n", small, big);
+  
+  return 0;
+}
+
+
+void min_max(int a[], int n, int *max, int *min) {
+  int i;
+  *min = *max = a[0];
+  
+  for (i = 1; i < n; i++) {
+    if (a[i] > *max)
+      *max = a[i];
+    else if (a[i] < *min)
+      *min = a[i];
+  }
+}

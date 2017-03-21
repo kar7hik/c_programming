@@ -1,0 +1,18 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+
+  char planets[][8] = {"Mercury", "Venus", "Earth",
+                       "Mars", "Jupiter", "Saturn",
+                       "Uranus", "Neptune", "Pluto"};
+
+  int i;
+
+  for (i = 0; i < sizeof(planets); i++) {
+    
+  }
+  return 0;
+}

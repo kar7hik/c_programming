@@ -1,0 +1,7 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include "line.h"
+#include "word.h"
+

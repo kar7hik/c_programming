@@ -1,0 +1,17 @@
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  double number, sum = 0.0F;
+  
+  
+  printf("enter the numbers: ");
+  scanf("%Lf", &number);
+
+  while (number != 0.0) {
+    sum += number;
+    
+  }
+  return 0;
+}

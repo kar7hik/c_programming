@@ -1,0 +1,19 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+#define N 10
+
+int main(void) {
+  int a[N];
+  int *ptr;
+
+  printf("enter %d numbers: ", N);
+
+  for (p = a; p < a + N; p++) {
+    scanf("%d", p);
+  }
+  
+  return 0;
+}

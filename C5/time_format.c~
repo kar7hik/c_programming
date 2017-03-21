@@ -1,0 +1,11 @@
+// Copyright 2017 karthik
+
+#include <stdio.h>
+
+int main(void) {
+  int hour, minutes;
+
+  printf("enter the time in 24hrs format (hh:mm) : ");
+  scanf("%d:%d");
+  return 0;
+}

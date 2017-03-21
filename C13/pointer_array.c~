@@ -1,0 +1,12 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  char words[3][4];
+
+  char *ptr_words[4] = words;
+  
+  return 0;
+}

@@ -1,0 +1,56 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include <time.h>
+#define N 8
+
+int partition(int a[], int start, int end);
+void quicksort(int a[], int start, int end);
+
+
+int main(void) {
+  int a[N] = {10, 3, 6, 7, 12, 15, 18};
+  int i;
+
+  printf("original array: ");
+  for (i = 0; i < N; i++) {
+      printf("%d  ", a[i]);
+  }
+  printf("\n");
+
+  quicksort(a, 0, 7);
+  
+  return 0;
+}
+
+void quicksort(int a[], int start, int end) {
+  int pivot;
+
+  if (start < end) {
+    pivot = partition(a, start, end);
+    quicksort(a, start, (pivot - 1));
+    quicksort(a, (pivot + 1), end);
+  }
+}
+
+int partition(int a[], int start, int end) {
+  int p_index = start;
+  int pivot = a[end];
+  int temp;
+  int i;
+  
+  for (i = start; i < (end - 1); i++) {
+    if (a[i] <= pivot) {
+      temp = a[i];
+      a[i] = a[p_index];
+      a[p_index] = temp;
+      p_index++;
+    }
+  }
+  temp = a[p_index];
+  a[p_index] = a[end];
+  a[end] = temp;
+
+  return p_index;
+}

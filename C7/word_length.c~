@@ -1,0 +1,18 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  char word;
+  int count = 0;
+
+  printf("enter the word: ");
+  while ((word = getchar()) != '\n') {
+    count += 1;
+  }
+
+  printf("word count is %d\n", count);
+  
+  return 0;
+}

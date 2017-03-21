@@ -1,0 +1,28 @@
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  int day, month, year;
+  int day1, month1, year1;
+  
+  printf("enter the date (dd/mm/yyyy) : ");
+  scanf("%d/%d/%d", &day, &month, &year);
+
+  while (day != 0 && month != 0 && year != 0) {
+    printf("enter the date (dd/mm/yyyy) : ");
+    scanf("%d/%d/%d", &day1, &month1, &year1);
+    if (year1 > year) {
+      year = year1;
+    }
+
+    if (month1 > month)
+      month = month1;
+    if (day1 > day)
+      day = day1;
+  }
+
+  printf("%d/%d/%d is the earliest date\n", day, month, year);
+  
+  return 0;
+}

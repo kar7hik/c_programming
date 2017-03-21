@@ -1,0 +1,26 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include <ctype.h>
+
+#define MAX_LEN_PHONE_NO 30
+
+int main(void) {
+  char phoneno[MAX_LEN_PHONE_NO];
+  int i, n;
+
+  printf("enter the number: ");
+
+  for (i = 0; i < MAX_LEN_PHONE_NO; i++) {
+    phoneno[i] = getchar();
+  }
+
+  n = 0;
+  while ( phoneno[n] != '\n') {
+    printf("%d\n", phoneno[n]);
+    n++;
+  }
+  
+  return 0;
+}

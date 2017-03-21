@@ -1,0 +1,22 @@
+
+// Copyright 2017 Karthik
+
+/* header files */
+#include <stdio.h>
+
+
+/* macros */
+#define MAX_LEN 100
+
+
+/* global variables */
+char sentence[MAX_LEN];
+char *ptr = sentence;
+
+
+/* main function */
+int main(void) {
+  char ch;
+  
+  return 0;
+}

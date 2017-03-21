@@ -1,0 +1,14 @@
+
+// Copyright 2017 Karthik
+
+
+#include <stdio.h>
+
+char strA[80] = "A string to be used";
+char strB[80];
+
+int main(void) {
+
+  
+  return 0;
+}

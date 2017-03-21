@@ -1,0 +1,38 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+/* macros */
+#define MAX_LEN 100
+
+char sentence[MAX_LEN];
+char *ptr = sentence;
+
+int main(void) {
+
+  //  printf("address of ptr: %p\n", ptr);
+  //  printf("address of sentence[0]: %p\n", &sentence[0]);
+
+  char ch;
+  int counter = 0;
+  
+  printf("enter the sentence: ");
+
+  while ((ch = getchar() != '\n')) {
+    *ptr++ = ch;
+    counter++;
+    printf("%c  ", ch);
+  }
+
+  int i;
+
+  for (i = counter; i >= 0; i--) {
+    printf("%c", sentence[i]);
+  }
+
+  printf("\n");
+  
+
+  return 0;
+}

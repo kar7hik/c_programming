@@ -1,0 +1,28 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+#define N 20
+
+int read_line(char str[], int n);
+
+int main(void) {
+  char str[N];
+  printf("enter the sentence: ");
+  read_line(str, N);
+
+  
+  return 0;
+}
+
+int read_line(char str[], int n) {
+  int ch, i = 0;
+
+  while ((ch = getchar()) != '\n') {
+    if (i < n)
+      str[i] = n;
+  }
+  str[i] = '\0';
+  return i;
+}

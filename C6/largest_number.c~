@@ -1,0 +1,20 @@
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+
+int main(void) {
+  float num = 0.0f;
+  float prev;
+  
+  printf("enter a number: ");
+  scanf("%f", &num);
+  prev = num;
+  while (num >= 0) {
+    printf("enter a number: ");
+    scanf("%f", &num);
+    if (num > prev)
+      prev = num;
+  }
+  
+  return 0;
+}

@@ -1,0 +1,21 @@
+// Copyright 2017 Karthik
+
+// asks the user for a 2 digit no. then prints
+// english word for the number.
+
+#include <stdio.h>
+
+int main(void) {
+  int number, fd, sd;
+
+  printf("please enter the two digit number: ");
+  scanf("%d", &number);
+
+  fd = number / 10; 
+  sd = number % 10;
+
+  printf("1st digit: %d\n2nd digit: %d\n", fd, sd);
+
+      
+  return 0;
+}
