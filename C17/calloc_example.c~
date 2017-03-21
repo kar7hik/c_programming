@@ -1,0 +1,19 @@
+
+// Copyright 2017 Karthik
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct point {
+  int x, y;
+} *p, a;
+
+int main(void) {
+  p = calloc(1, sizeof(struct point));
+
+  printf("%d and %d\n", (*p).x, (*p).y);
+  
+  return 0;
+}

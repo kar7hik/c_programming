@@ -1,0 +1,26 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+struct node {
+  int value;
+  struct node *new_node;
+};
+
+
+
+struct node *add_to_list(struct node *list, int n) {
+  struct node *new_node;
+
+
+}
+
+
+int main(void) {
+  
+  return 0;
+}

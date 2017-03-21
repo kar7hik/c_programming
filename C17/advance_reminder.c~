@@ -1,0 +1,47 @@
+
+// Copyright 2017 Karthik
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_REMIND 50
+#define MSG_LEN 60
+
+
+int read_line(char str[], int n);
+void print_current_word(char *ptr, int n);
+
+int main(void) {
+  char sentence[MSG_LEN + 1];
+  printf("enter a sentence: \n");
+  int count = read_line(sentence, MSG_LEN);
+  //  printf("%s\n", s);
+  print_current_word(sentence, MSG_LEN);
+  
+  return 0;
+}
+
+
+int read_line(char str[], int n) {
+  int i = 0;
+  char ch;
+
+  while ((ch = getchar()) != '\n')
+    if (i < n)
+      str[i++] = ch;
+
+  str[i] = '\0';
+  return i;
+}
+
+
+void print_current_word(char *ptr, int n) {
+  int  i = 0;
+
+  while (*ptr != '\0' && i < n) {
+    printf("%c", *ptr++);
+    i++;
+  }
+  printf("\n");
+}
