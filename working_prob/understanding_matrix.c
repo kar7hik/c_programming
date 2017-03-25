@@ -16,12 +16,19 @@ int mat[ROW][COL];
 int main(void) {
 
 
-  printf("address of mat's 1st elem = %p\n", mat);
-  printf("address of mat's 1st elem = %p\n", mat[0]);
-  printf("address of mat's 1st elem = %p\n", &mat[0][0]);
+  printf("address of mat's 1st elem (mat) = %p\n", mat);
+  printf("address of mat's 1st elem (mat[0]) = %p\n", mat[0]);
+  printf("address of mat's 1st elem (&mat[0][0]) = %p\n", &mat[0][0]);
 
-  printf("\n\naddress of mat's last elem = %p\n", &mat[ROW-1][COL-1]);
-  printf("address of mat's last elem = %p\n", mat[ROW-1] + (COL-1));
+  printf("\n\nvalue in &mat[0] = %p\n", &mat[0]);
+  int (*p)[COL] = &mat[0];
+  p++;
+  printf("value in *p = %p\n", *p);
+  
+  printf("\n\naddress of mat's last elem (&mat[ROW-1][COL-1]) = %p\n",
+         &mat[ROW-1][COL-1]);
+  printf("address of mat's last elem (mat[ROW-1] + (COL-1)) = %p\n",
+         mat[ROW-1] + (COL-1));
 
 
   int *ptr;
