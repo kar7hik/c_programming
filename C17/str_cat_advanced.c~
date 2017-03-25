@@ -1,0 +1,29 @@
+
+
+// Copyright 2017 Karthik
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+char *concat(const char *s1, const char *s2);
+
+
+int main(void) {
+  
+  return 0;
+}
+
+
+char *concat(const char *s1, const char *s2) {
+  char *result;
+
+  result = (char *) (malloc(strlen(s1) + strlen(s2) + 1));
+  if (return == NULL) {
+    printf("Error: malloc failed in concat\n");
+    exit(EXIT_FAILURE);
+  }
+
+  
+}
